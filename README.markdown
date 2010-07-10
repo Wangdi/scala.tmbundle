@@ -4,7 +4,7 @@ This is a [TextMate](http://macromates.com/) bundle for scala programming mainta
 
 It might work best if used in conjunction with [the theme I use](http://github.com/paulp/scala.tmtheme) alongside it:
 
-    git clone git://github.com/mads379/scala.tmbundle.git
+    git clone git://github.com/paulp/scala.tmbundle.git
     git clone git://github.com/paulp/scala.tmtheme.git
     open scala.tmbundle
     open scala.tmtheme/Vibrant\ Scala.tmTheme
