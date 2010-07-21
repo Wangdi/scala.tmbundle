@@ -402,6 +402,12 @@
 					<key>match</key>
 					<string>([a-zA-Z][a-zA-Z0-9]*(_[^a-zA-Z0-9\s]+)?)</string>
 				</dict>
+			</array>
+		</dict>
+		<key>primitive-types</key>
+		<dict>
+			<key>patterns</key>
+			<array>
 				<dict>
 					<key>captures</key>
 					<dict>
@@ -458,7 +464,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>quailfiedClassName</key>
+		<key>qualifiedClassName</key>
 		<dict>
 			<key>captures</key>
 			<dict>
@@ -469,7 +475,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(\w*)</string>
+			<string>(\b([A-Z][\w]*))</string>
 		</dict>
 		<key>returnTypes</key>
 		<dict>
@@ -483,6 +489,32 @@
 			</dict>
 			<key>match</key>
 			<string>:\s*(\w+)</string>
+		</dict>
+		<key>scala-symbol</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.symbol</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>('\w+)</string>
+		</dict>
+		<key>storage-modifiers</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>storage.modifier.scala</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\b(final|@native|synchronized|abstract|sealed|@transient|@volatile)\b</string>
 		</dict>
 		<key>scala-symbol</key>
 		<dict>
